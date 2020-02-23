@@ -27,7 +27,7 @@ touch ${VERSIONS}
 # for each used docker container grep the literature
 for TOOL in $(grep ':' ${TRACE} | awk '{print $3}' | awk 'BEGIN{FS="/"};{print $2}' | awk 'BEGIN{FS=":"};{print $1}' | uniq); do 
     
-    BIB_FILE=bibs/${TOOL}.bib
+    BIB_FILE=${LITERATURE_DIR}/bibs/${TOOL}.bib
 
     if test -f "$BIB_FILE"; then
         # write bib file to reference list
