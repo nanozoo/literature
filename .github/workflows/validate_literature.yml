@@ -8,4 +8,4 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: validate literature entries
-      run: bash .bin/validate_literature.sh
+      run: bash ./bin/validate_literature.sh
