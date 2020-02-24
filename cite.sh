@@ -54,6 +54,11 @@ mv tmp ${VERSIONS}
 
 # build some basic TeX file to compile the references
 TEX=${OUTPUT}/refs.tex
+if test -f "$TEX"; then
+    rm ${TEX}
+fi
+touch ${TEX}
+
 cat <<EOT >> ${TEX}
 \documentclass{amsart}
 \usepackage{url}
