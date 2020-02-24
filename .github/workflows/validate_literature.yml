@@ -1,4 +1,4 @@
-name: Syntax_check
+name: Validate literature
 
 on: [push]
 
@@ -8,4 +8,4 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: validate literature entries
-      run: bash .bin/validate_literature
+      run: bash .bin/validate_literature.sh
