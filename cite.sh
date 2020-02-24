@@ -52,3 +52,14 @@ done
 cat ${VERSIONS} | sort | uniq > tmp
 mv tmp ${VERSIONS}
 
+# build some basic TeX file to compile the references
+TEX=${OUTPUT}/refs.tex
+cat <<EOT >> ${TEX}
+\documentclass{amsart}
+\usepackage{url}
+\begin{document}
+\nocite{*}
+\bibliographystyle{amsplain}
+\bibliography{refs}
+\end{document}
+EOT
