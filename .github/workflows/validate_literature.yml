@@ -1,0 +1,11 @@
+name: Validate literature
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: validate literature entries
+      run: bash ./bin/validate_literature.sh
