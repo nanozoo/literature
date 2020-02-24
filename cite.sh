@@ -12,6 +12,10 @@ TAG=$2
 LITERATURE_DIR=${OUTPUT}/literature-${TAG}
 TRACE=${OUTPUT}/trace.txt
 
+# make trace file uniq
+cat ${TRACE} | sort | uniq > tmp
+mv tmp ${TRACE}
+
 # generate the literature bib file and versions txt
 REFS=${OUTPUT}/refs.bib
 VERSIONS=${OUTPUT}/versions.tsv
