@@ -37,9 +37,13 @@ for TOOL in $(grep ':' ${TRACE} | awk '{print $3}' | awk 'BEGIN{FS="/"};{print $
 
     # get version number 
     VERSION=$(grep ${TOOL} ${TRACE} | awk '{print $3}' | awk 'BEGIN{FS=":"};{print $2}' | awk 'BEGIN{FS="--"};{print $1}' | uniq)
-    printf "$TOOL\t$VERSION\n" >> ${VERSIONS}
 
     # get image tag number 
-    VERSION=$(grep ${TOOL} ${TRACE} | awk '{print $3}' | awk 'BEGIN{FS=":"};{print $2}' | awk 'BEGIN{FS="--"};{print $2}' | uniq)
+    TAG=$(grep ${TOOL} ${TRACE} | awk '{print $3}' | awk 'BEGIN{FS=":"};{print $2}' | awk 'BEGIN{FS="--"};{print $2}' | uniq)
+
+    printf "$TOOL\t$VERSION\t$TAG\n" >> ${VERSIONS}
 done
+
+cat ${VERSIONS} | sort | uniq > tmp
+mv tmp ${VERSIONS}
 
