@@ -13,7 +13,7 @@ LITERATURE_DIR=${OUTPUT}/literature-${TAG}
 TRACE=${OUTPUT}/trace.txt
 
 # make trace file uniq
-cat ${TRACE} | sort | uniq > tmp
+cat ${TRACE} | sort | uniq | grep -v container > tmp
 mv tmp ${TRACE}
 
 # generate the literature bib file and versions txt
@@ -41,10 +41,10 @@ for TOOL in $(grep ':' ${TRACE} | awk '{print $3}' | awk 'BEGIN{FS="/"};{print $
     fi
 
     # get version number 
-    VERSION=$(grep ${TOOL} ${TRACE} | awk '{print $3}' | awk 'BEGIN{FS=":"};{print $2}' | awk 'BEGIN{FS="--"};{print $1}' | uniq)
+    VERSION=$(grep nanozoo/${TOOL}: ${TRACE} | awk '{print $3}' | awk 'BEGIN{FS=":"};{print $2}' | awk 'BEGIN{FS="--"};{print $1}' | uniq)
 
     # get image tag number 
-    TAG=$(grep ${TOOL} ${TRACE} | awk '{print $3}' | awk 'BEGIN{FS=":"};{print $2}' | awk 'BEGIN{FS="--"};{print $2}' | uniq)
+    TAG=$(grep nanozoo/${TOOL}: ${TRACE} | awk '{print $3}' | awk 'BEGIN{FS=":"};{print $2}' | awk 'BEGIN{FS="--"};{print $2}' | uniq)
 
     printf "$TOOL\t$VERSION\t$TAG\n" >> ${VERSIONS}
 done
