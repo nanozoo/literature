@@ -1,0 +1,2 @@
+Bandage is a program for visualising de novo assembly graphs. By displaying connections which are not present in the contigs file, Bandage opens up new possibilities for analysing de novo assemblies.
+For more information please visit the [bandage homepage](https://rrwick.github.io/Bandage/)

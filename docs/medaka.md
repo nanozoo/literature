@@ -1,0 +1,2 @@
+medaka is a tool to create a consensus sequence from nanopore sequencing data. This task is performed using neural networks applied from a pileup of individual sequencing reads against a draft assembly. It outperforms graph-based methods operating on basecalled data, and can be competitive with state-of-the-art signal-based methods, whilst being much faster.
+For more information please visit the [medaka homepage](https://github.com/nanoporetech/medaka)

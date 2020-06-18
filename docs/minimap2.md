@@ -1,0 +1,2 @@
+Minimap2 is a versatile sequence alignment program that aligns DNA or mRNA sequences against a large reference database.
+For more information please visit the [minimap2 homepage](https://github.com/lh3/minimap2)

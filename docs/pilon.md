@@ -1,0 +1,2 @@
+Pilon is a software tool to improve draft assemblies and to find variation among strains, including large event detection.
+For more information please visit the [pilon homepage](https://github.com/broadinstitute/pilon/wiki)

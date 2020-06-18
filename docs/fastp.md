@@ -1,0 +1,2 @@
+A tool designed to provide fast all-in-one preprocessing for FastQ files. (QC/adapters/trimming/filtering/splitting/merging...)
+For more information please visit the [fastp homepage](https://github.com/OpenGene/fastp)

@@ -1,0 +1,2 @@
+RepeatMasker is a program that screens DNA sequences for interspersed repeats and low complexity DNA sequences. The output of the program is a detailed annotation of the repeats that are present in the query sequence as well as a modified version of the query sequence in which all the annotated repeats have been masked (default: replaced by Ns).
+For more information please visit the [repeatmasker homepage](http://www.repeatmasker.org/)

@@ -1,0 +1,2 @@
+MITOS does annotation of metazoan mitochondrial genomes. MITOS allows a reliable and consistent annotation of proteins and non-coding RNAs. 
+For more information please visit the [mitos homepage](http://mitos.bioinf.uni-leipzig.de/help.py#example)

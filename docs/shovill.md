@@ -1,0 +1,2 @@
+Shovill is a pipeline which uses SPAdes at its core, but alters the steps before and after the primary assembly step to get similar results in less time. 
+For more information please visit the [Shovill homepage](https://github.com/tseemann/shovill)

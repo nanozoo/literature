@@ -1,0 +1,2 @@
+MetaEuk is a toolkit for high-throughput, reference-based discovery, and annotation of protein-coding genes in eukaryotic metagenomic contigs. It performs fast searches with 6-frame-translated fragments covering all possible exons and optimally combines matches into multi-exon proteins.
+For more information please visit the [metaeuk homepage](https://github.com/soedinglab/metaeuk)
