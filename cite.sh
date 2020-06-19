@@ -29,7 +29,7 @@ touch ${REFS}
 touch ${VERSIONS}
 
 # for each used docker container grep the literature
-for TOOL in $(grep ':' ${TRACE} | awk '{print $3}' | awk 'BEGIN{FS="/"};{print $2}' | awk 'BEGIN{FS=":"};{print $1}' | uniq); do 
+for TOOL in $(grep ':' ${TRACE} | awk '{print $3}' | awk 'BEGIN{FS="/"};{print $2}' | awk 'BEGIN{FS=":"};{print $1}' | sort | uniq); do 
     
     BIB_FILE=${LITERATURE_DIR}/bibs/${TOOL}.bib
 
@@ -41,10 +41,10 @@ for TOOL in $(grep ':' ${TRACE} | awk '{print $3}' | awk 'BEGIN{FS="/"};{print $
     fi
 
     # get version number 
-    VERSION=$(grep nanozoo/${TOOL}: ${TRACE} | awk '{print $3}' | awk 'BEGIN{FS=":"};{print $2}' | awk 'BEGIN{FS="--"};{print $1}' | uniq)
+    VERSION=$(grep nanozoo/${TOOL}: ${TRACE} | awk '{print $3}' | awk 'BEGIN{FS=":"};{print $2}' | awk 'BEGIN{FS="--"};{print $1}'| sort | uniq)
 
     # get image tag number 
-    TAG=$(grep nanozoo/${TOOL}: ${TRACE} | awk '{print $3}' | awk 'BEGIN{FS=":"};{print $2}' | awk 'BEGIN{FS="--"};{print $2}' | uniq)
+    TAG=$(grep nanozoo/${TOOL}: ${TRACE} | awk '{print $3}' | awk 'BEGIN{FS=":"};{print $2}' | awk 'BEGIN{FS="--"};{print $2}' | sort | uniq)
 
     printf "$TOOL\t$VERSION\t$TAG\n" >> ${VERSIONS}
 done
