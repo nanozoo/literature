@@ -1,0 +1,1 @@
+SeqKit is a cross-platform ultrafast comprehensive toolkit that does common manipulations of FASTA/Q file include converting, searching, filtering, deduplication, splitting, shuffling, and sampling.   For more information please visit the [SeqKit homepage](https://bioinf.shenwei.me/seqkit/)

@@ -1,0 +1,2 @@
+Local accelerated basecalling for Nanopore data ("guppy"). nanozoo consistently uses the high accuracy models for basecalling via GPU support if it is available at the time of sample analysis (some nanopore sequencing kits may not support a high accuracy model).
+For more information please visit the [guppy homepage at Oxford Nanopore Technologies](https://community.nanoporetech.com/downloads/guppy/release_notes). You need to login with your nanopore account to view the site. There is no citation available for this tool.
