@@ -1,0 +1,2 @@
+The MaSuRCA (Maryland Super Read Cabog Assembler) genome assembly and analysis toolkit contains of MaSuRCA genome assembler, QuORUM error corrector for Illumina data, POLCA genome polishing software, Chromosome scaffolder, jellyfish mer counter, and MUMmer aligner. The MaSuRCA assembler combines the benefits of deBruijn graph and Overlap-Layout-Consensus assembly approaches. It supports hybrid assembly with short Illumina reads and long high error PacBio/MinION data.
+For more information please visit the [masurca homepage](https://github.com/alekseyzimin/masurca)
