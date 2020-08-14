@@ -41,10 +41,10 @@ for TOOL in $(grep ':' ${TRACE} | awk '{print $3}' | awk 'BEGIN{FS="/"};{print $
     fi
 
     # get version number 
-    VERSION=$(grep nanozoo/${TOOL}: ${TRACE} | awk '{print $3}' | awk 'BEGIN{FS=":"};{print $2}' | awk 'BEGIN{FS="--"};{print $1}'| sort | uniq)
+    VERSION=$(grep nanozoo/${TOOL}: ${TRACE} | awk '{print $3}' | awk 'BEGIN{FS=":"};{print $2}' | awk 'BEGIN{FS="--"};{print $1}'| sort | uniq | sed '/^$/d')
 
     # get image tag number 
-    TAG=$(grep nanozoo/${TOOL}: ${TRACE} | awk '{print $3}' | awk 'BEGIN{FS=":"};{print $2}' | awk 'BEGIN{FS="--"};{print $2}' | sort | uniq)
+    TAG=$(grep nanozoo/${TOOL}: ${TRACE} | awk '{print $3}' | awk 'BEGIN{FS=":"};{print $2}' | awk 'BEGIN{FS="--"};{print $2}' | sort | uniq | sed '/^$/d')
 
     printf "$TOOL\t$VERSION\t$TAG\n" >> ${VERSIONS}
 done
