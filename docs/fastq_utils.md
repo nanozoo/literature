@@ -1,0 +1,2 @@
+Set of Linux utilities to validate and manipulate fastq files. It also includes a set of programs to preprocess barcodes (namely UMIs, cells and samples), add the barcodes as tags in BAM files and count UMIs.
+For more information please visit the [fastq utils homepage](https://github.com/nunofonseca/fastq_utils)
