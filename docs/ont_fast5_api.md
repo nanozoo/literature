@@ -1,0 +1,2 @@
+ONT fast5 api is a simple interface to HDF5 files of the Oxford Nanopore .fast5 file format. It provides concrete implementation of the fast5 file schema using the generic h5py library, plain-english-named methods to interact with and reflect the fast5 file schema, tools to convert between multi_read and single_read formats and tools to compress/decompress raw data in files.
+For more information please visit [https://github.com/nanoporetech/ont_fast5_api](https://github.com/nanoporetech/ont_fast5_api). 
