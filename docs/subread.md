@@ -1,0 +1,2 @@
+The Subread package comprises a suite of software programs for processing next-gen sequencing read data including Subread, Subjunc and, most importantly and used in the pipeline, featureCounts: a software program developed for counting reads to genomic features such as genes, exons, promoters and genomic bins.
+For more information please visit the [subread homepage](http://subread.sourceforge.net/)
