@@ -1,0 +1,2 @@
+VirSorter is a tool designed to detect viral signal in different types of microbial sequence data in both a reference-dependent and reference-independent manner, leveraging probabilistic models and extensive virome data to maximize detection of novel viruses. 
+For more information please visit the [VirSorter homepage](https://github.com/simroux/VirSorter)
