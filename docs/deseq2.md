@@ -1,0 +1,2 @@
+Estimate variance-mean dependence in count data from high-throughput sequencing assays and test for differential expression based on a model using the negative binomial distribution.
+For more information please visit the [DESeq2 homepage](https://bioconductor.org/packages/release/bioc/html/DESeq2.html)
