@@ -1,1 +1,1 @@
-[MUMmer](https://github.com/mummer4/mummer) is a versatile alignment tool for DNA and protein sequences. It can be used to rapidly align even complete genome sequences. 
+[MUMmer](https://github.com/mummer4/mummer) is a versatile alignment tool for DNA and protein sequences. It can be used to rapidly align even complete genome sequences. For more information please visit the [MUMmer web page](https://github.com/mummer4/mummer).
