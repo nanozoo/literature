@@ -1,0 +1,2 @@
+Sambamba is a high performance, highly parallel, robust, and fast tool (and library), written in the D programming language, for working with SAM and BAM mapping files.
+For more information please visit the [Sambamba homepage](https://github.com/biod/sambamba).
